@@ -1,16 +1,23 @@
 {
-  "caret_style": "phase",
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"caret_style": "phase",
+	"color_scheme": "Packages/Dayle Rees Color Schemes/Darkside.tmTheme",
 	"find_selected_text": true,
-	"font_face": "Ubuntu Mono",
-	"font_size": 11.0,
+	"font_face": "DroidSans",
+	"font_options":
+	[
+		"bold"
+	],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"indent_guide_options":
 	[
 		"draw_normal",
 		"draw_active"
 	],
+	"tab_completion": true,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": false,
-	"wide_caret": true,
-	"word_wrap": false
+	"word_wrap": true
 }
