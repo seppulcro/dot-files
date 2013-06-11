@@ -4,20 +4,19 @@
 	"font_face": "ProggyCleanTT",
 	"font_size": 12,
 	"gutter": false,
-	"tab_completion": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"line_numbers": true,
 	"scroll_past_end": true,
 	"word_wrap": true,
 	"wrap_width": 80,
 	"caret_style": "phase",
-	
-	"ignored_packages":
-	[
-		"Vintage"
-	],
 	"indent_guide_options":
 	[
 		"draw_normal",
 		"draw_active"
-	]
+	],
+	"tab_completion": true
 }
