@@ -1,12 +1,16 @@
 {
+	"color_scheme": "Packages/Dayle Rees Color Schemes/LastNight.tmTheme",
+	"draw_centered": true,
+	"font_face": "ProggyCleanTT",
+	"font_size": 12,
+	"gutter": false,
+	"tab_completion": true,
+	"line_numbers": true,
+	"scroll_past_end": true,
+	"word_wrap": true,
+	"wrap_width": 80,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Dayle Rees Color Schemes/Darkside.tmTheme",
-	"find_selected_text": true,
-	"font_face": "DroidSans",
-	"font_options":
-	[
-		"bold"
-	],
+	
 	"ignored_packages":
 	[
 		"Vintage"
@@ -15,9 +19,5 @@
 	[
 		"draw_normal",
 		"draw_active"
-	],
-	"tab_completion": true,
-	"theme": "Soda Dark.sublime-theme",
-	"translate_tabs_to_spaces": false,
-	"word_wrap": true
+	]
 }
