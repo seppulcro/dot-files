@@ -1,4 +1,5 @@
 {
+	"caret_style": "phase",
 	"color_scheme": "Packages/Dayle Rees Color Schemes/LastNight.tmTheme",
 	"draw_centered": true,
 	"font_face": "ProggyCleanTT",
@@ -8,15 +9,14 @@
 	[
 		"Vintage"
 	],
-	"line_numbers": true,
-	"scroll_past_end": true,
-	"word_wrap": true,
-	"wrap_width": 80,
-	"caret_style": "phase",
 	"indent_guide_options":
 	[
 		"draw_normal",
 		"draw_active"
 	],
-	"tab_completion": true
+	"line_numbers": true,
+	"scroll_past_end": true,
+	"tab_completion": true,
+	"word_wrap": true,
+	"wrap_width": 80
 }
