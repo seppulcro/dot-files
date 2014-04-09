@@ -1,0 +1,73 @@
+" <<<---Skyxer's GVim .vimrc--->>>
+" <INSTALLED PLUGINS w/ Pathogen>
+" Airline (https://github.com/bling/vim-airline)
+" NERDTree (https://github.com/scrooloose/nerdtree)
+" <COLORSCHEMES>
+" - kolor (https://github.com/zeis/vim-kolor)
+
+" <<--Global Settings-->>
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+if has('gui_running')
+      set guifont=Inconsolata_for_Powerline:h11
+endif
+set noerrorbells visualbell t_vb=           "Prevent screen flashing from errors
+autocmd GUIEnter * set visualbell t_vb=     "Prevent screen flashing from errors
+colorscheme kolor                           "Set Vim colorscheme as kolor
+let g:airline_theme = 'kolor'               "Set Airline theme as kolor
+set tabstop=4                               "Set how many columns is a TAB
+set shiftwidth=4                            "Set how many columns is identation
+set softtabstop=4                           "Set how many columns is a TAB in Insert Mode
+set expandtab                               "TAB in insert is the set number of columns
+set smarttab                                "<Tab> in front of a line inserts blank set columns
+set hidden                                  "Buffer unloaded on abandon
+set autowriteall                            "Save file on buffer switch
+set wildmenu                                "Autcomplete on status line 
+set showcmd                                 "Show complete command
+set hlsearch                                "Highlight search
+set nomodeline                              "Disable modeline variables
+set ignorecase                              "Ignore Upper/Lower case differences
+set smartcase                               "Check for Upper/Lower if search contains either
+set backspace=indent,eol,start              "Move using Backspace
+set autoindent                              "Automatic Indentation
+set nostartofline                           "Prevent column change on line jump
+set ruler                                   "Shows ruler for the cursor
+set laststatus=2                            "Always show statusline
+set confirm                                 "Ask for command confirmation
+set mouse=a                                 "Enable (all) mouse commands
+set cmdheight=1                             "Size of command line
+set number                                  "Show line Numbers
+set notimeout ttimeout ttimeoutlen=200      "Set timeout period
+set clipboard=unnamedplus                   "Use system clipboard
+map Y y$                                    "Make Y effect to end of line instead of whole line
+
+"<<--Mappings-->>
+nnoremap <C-L> :nohl<CR><C-L>
+
+"<<--Airline Settings-->>
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+
+"<<--NERDTree Settings-->>
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+let NERDTreeShowBookmarks=1
+map <F2> :NERDTreeToggle<CR>
+map <Leader>nt :NERDTree %:p:h<CR>
+"SYNTAXES
+autocmd BufRead,BufNewFile *.as set filetype=as3
+autocmd BufRead,BufNewFile *.hx set filetype=haxe
+"<<--NERDTree Autoclose
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+"<<--GVim to Vim Settings-->>
+set guioptions-=m "Menu Bar
+set guioptions-=l 
+set guioptions-=L 
+set guioptions-=r
+set guioptions-=R 
+set guioptions-=T 
